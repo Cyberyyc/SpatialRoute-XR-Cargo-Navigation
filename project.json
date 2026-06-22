@@ -1,0 +1,8 @@
+{
+  "name": "com.cyberyyc.spatialroute-xr-cargo-navigation",
+  "version": "0.1.0",
+  "displayName": "SpatialRoute XR Cargo Navigation",
+  "unity": "2022.3",
+  "description": "Selected Unity runtime modules for SpatialRoute XR Cargo Navigation",
+  "license": "MIT"
+}

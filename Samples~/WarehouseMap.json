@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "entry",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "id": "junction",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 3
+      }
+    },
+    {
+      "id": "aisle-a",
+      "position": {
+        "x": -2,
+        "y": 0,
+        "z": 3
+      }
+    },
+    {
+      "id": "cargo-a",
+      "position": {
+        "x": -2,
+        "y": 0,
+        "z": 6
+      }
+    },
+    {
+      "id": "aisle-b",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 3
+      }
+    },
+    {
+      "id": "cargo-b",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 7
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "entry",
+      "to": "junction",
+      "multiplier": 1,
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "from": "junction",
+      "to": "aisle-a",
+      "multiplier": 1,
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "from": "aisle-a",
+      "to": "cargo-a",
+      "multiplier": 1,
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "from": "junction",
+      "to": "aisle-b",
+      "multiplier": 1,
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "from": "aisle-b",
+      "to": "cargo-b",
+      "multiplier": 1,
+      "bidirectional": true,
+      "enabled": true
+    }
+  ],
+  "cargos": [
+    {
+      "id": "A",
+      "displayName": "Cargo A",
+      "nodeId": "cargo-a"
+    },
+    {
+      "id": "B",
+      "displayName": "Cargo B",
+      "nodeId": "cargo-b"
+    }
+  ]
+}
